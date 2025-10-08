@@ -6,9 +6,13 @@ import TronClassSkiper
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 session = requests.Session()
+
+#====!!把自己的session以字串取代mySession!!====#
 session.cookies.set("session", mySession)
 
-url = "https://eclass.yuntech.edu.tw/api/courses/116976/activities?sub_course_id=0"
+classCode = input("輸入課程代碼: ")
+
+url = f"https://eclass.yuntech.edu.tw/api/courses/{classCode}/activities?sub_course_id=0"
 
 response = session.get(url, verify=False)
 data = response.json()

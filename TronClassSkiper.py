@@ -2,13 +2,13 @@ import requests
 import time
 import urllib3
 from alive_progress import alive_bar
-
+import mySession
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 classCode = 00000
 url = f"https://eclass.yuntech.edu.tw/api/course/activities-read/{classCode}"
 
-session_id = ""#輸入你的session!!!!
+session_id = mySession.mySession #我把我的session藏在mySession，自己要用的話把import拿掉直接用字串輸入你的session!!!!
 
 targetTime = 100
 jumpScale = 100

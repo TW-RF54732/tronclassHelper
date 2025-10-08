@@ -2,6 +2,8 @@ import requests
 import time
 import urllib3
 from alive_progress import alive_bar
+
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 classCode = 00000
 url = f"https://eclass.yuntech.edu.tw/api/course/activities-read/{classCode}"

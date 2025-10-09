@@ -110,6 +110,7 @@ python TronClassSkiper.py
 
 <img width="1095" height="107" alt="image" src="https://github.com/user-attachments/assets/a39fd437-213d-4a2b-8a94-d9b25b29b15d" />
 3. 然後按下Enter，等待爆破小隊收工，進度條完成後就已經跳過了。回到Tronclass查看(沒有的話刷新看看，依然沒有可以寫Issues給我)
+
 ### 你跟我一樣比較懶，想直接跳過課程中所有的影片:
 1. 在終端中執行:
 ```

@@ -44,6 +44,7 @@ def API_Skip(classCode):
 
 if __name__ == "__main__":
     classCode = input("輸入課程碼:")
+    current = 1
     url = f"https://eclass.yuntech.edu.tw/api/course/activities-read/{classCode}"
 
     targetTime = getVideoTime(classCode)
@@ -52,11 +53,11 @@ if __name__ == "__main__":
         while current < targetTime:
             time.sleep(0.2)
             if current + jumpScale >= targetTime:
-                sendPost(current, targetTime)
+                sendPost(url,current, targetTime)
                 bar(targetTime - current+1)
                 current = targetTime
             else:
-                sendPost(current, current + jumpScale)
+                sendPost(url,current, current + jumpScale)
                 bar(jumpScale)
                 current += jumpScale
     #     print(f"已送出範圍：{current}")

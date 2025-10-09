@@ -105,6 +105,9 @@ python TronClassSkiper.py
 之後會向你要求課程碼
 2.從瀏覽器中打開你要跳過的影片的頁面，找到URL中最後部分的一串數字，複製下貼給終端
 <img width="1521" height="835" alt="image" src="https://github.com/user-attachments/assets/c25d713b-78da-40a7-883d-ddd9cc98ccda" />
+
+---
+
 <img width="1095" height="107" alt="image" src="https://github.com/user-attachments/assets/a39fd437-213d-4a2b-8a94-d9b25b29b15d" />
 3. 然後按下Enter，等待爆破小隊收工，進度條完成後就已經跳過了。回到Tronclass查看(沒有的話刷新看看，依然沒有可以寫Issues給我)
 ### 你跟我一樣比較懶，想直接跳過課程中所有的影片:
@@ -114,6 +117,9 @@ python classScanner.py
 ```
 2. 從瀏覽器中打開你要跳過的課程的頁面，找到URL中一部分的一串數字，複製下貼給終端後按下Enter，等爆破大隊完工即可(如果課程比較多，程式會需要幾十秒後才會顯示進度條)
 <img width="1519" height="824" alt="image" src="https://github.com/user-attachments/assets/5f9c480d-edb3-4584-8e70-d5e5fa03105a" />
+
+---
+
 <img width="922" height="65" alt="image" src="https://github.com/user-attachments/assets/206540ae-8408-4637-b91e-cf0f7c9e446d" />
 3. 打開Tronclass查看
 

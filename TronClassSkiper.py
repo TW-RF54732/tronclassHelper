@@ -6,7 +6,7 @@ from alive_progress import alive_bar
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #############################
 
-session_id = "" #用字串輸入你的session!!!!
+session_id = "V2-1...後面會是亂碼" #用字串輸入你的session!!!!
 
 #############################
 session = requests.Session()

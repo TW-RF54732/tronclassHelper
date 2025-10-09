@@ -1,3 +1,18 @@
+# 這是啥?
+這是一個超級懶的費柴因為不想看生涯規劃而做的腳本，可以幾秒**看完**影片
+# 一般教學
+## Setup
+```
+git clone https://github.com/TW-RF54732/tronclassHelper.git
+cd .\tronclassHelper\
+pip install -r requirement.txt
+```
+## Setting
+打開腳本，把session以字串貼入變數`session_id`
+## Execute
+跳過一部影片運行`TronClassSkiper.py`
+想刷掉整節課的影片運行`classScanner.py`
+找到URL中的代碼一串數字貼入
 # 完全保母級教學
 
 這是一個使用 Python 撰寫的簡單工具。  

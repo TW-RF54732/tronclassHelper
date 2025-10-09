@@ -1,14 +1,17 @@
 import requests
 import urllib3
-from mySession import mySession
 from alive_progress import alive_bar
 import TronClassSkiper
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 session = requests.Session()
 
-#====!!把自己的session以字串取代mySession!!====#
-session.cookies.set("session", mySession)
+#############################
+
+session_id = "" #用字串輸入你的session!!!!
+
+#############################
+session.cookies.set("session", session_id)
 
 classCode = input("輸入課程代碼: ")
 

@@ -2,24 +2,27 @@ import requests
 import time
 import urllib3
 from alive_progress import alive_bar
-import mySession
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-session_id = mySession.mySession #我把我的session藏在mySession，自己要用的話把import拿掉直接用字串輸入你的session!!!!
+#############################
+
+session_id = "" #用字串輸入你的session!!!!
+
+#############################
 session = requests.Session()
 session.cookies.set("session", session_id)
 jumpScale = 120
 
 def sendPost(url,start, end):
     payload = {"start": start, "end": end}
-    response = session.post(url, json=payload, verify=False)  # ← 改這裡！
+    response = session.post(url, json=payload, verify=False)
     # print(response.status_code)
     # print(response.text)
 
 def getVideoTime(id):
     classCode = id
     aurl = f"https://eclass.yuntech.edu.tw/api/activities/{classCode}?sub_course_id=0"
-    response = session.get(aurl,verify=False)  # ← 改這裡！
+    response = session.get(aurl,verify=False)
     data = response.json()
 
     # 取得第一個 upload 中第一個影片的 duration
